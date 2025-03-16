@@ -7,29 +7,28 @@ body {
     color: #fff;
 }
 
+
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center; /* Fixed alignment issue */
+    align-items: center;
     background: #0c0808;
-    padding: 1em 2em;
+    padding: 1em;
 }
 
-.title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #f00;
-}
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
-    margin: 0;
     padding: 0;
+    justify-content: center;
+    width: 100%;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -43,27 +42,33 @@ nav ul li a:hover {
     color: #f00;
 }
 
+
 section {
-    padding: 100px;
+    padding: 10vh 5%;
     text-align: center;
 }
 
 #home {
-    background: url('Somnus\ Logo.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url('Somnus Logo.png') no-repeat center center;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #home h1 {
-    font-size: 100px; /* Increased size for 'Somnus' */
-    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Added glow effect */
+    font-size: 8vw; 
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 #about, #game {
     background: #222;
 }
-#contact{
+
+#contact {
     background: #0c0808;
 }
+
+
+@media (max-width: 768
